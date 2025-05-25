@@ -1,7 +1,0 @@
-{
-	"Name": "Titan Crosshairs Remastered",
-	"Description": "Makes titan crosshairs better",
-	"LoadPriority": 1,
-	"RequiredOnClient": false,
-	"Version": "1.0",
-}
