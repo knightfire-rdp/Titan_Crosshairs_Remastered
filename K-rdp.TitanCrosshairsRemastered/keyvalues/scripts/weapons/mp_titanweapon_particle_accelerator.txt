@@ -1,0 +1,53 @@
+WeaponData
+{
+	active_crosshair_count				"2"
+	rui_crosshair_index					"0"
+
+	RUI_CrosshairData
+	{
+		DefaultArgs
+		{
+			adjustedSpread				weapon_spread
+			adsFrac 					player_zoomFrac
+			isSprinting					player_is_sprinting
+			isReloading					weapon_is_reloading
+			teamColor					crosshair_team_color
+			isAmped						weapon_is_amped
+		    crosshairMovementX          crosshair_movement_x
+		    crosshairMovementY          crosshair_movement_y
+		}
+
+		Crosshair_1 //Ion's Default Hipfire + Alt Fire Crosshair
+		{
+			"ui"						"ui/crosshair_ion"
+			"base_spread"				"-0.2"	   			//(can disable)		//Slighty reduced to make split mode not have a visual crosshair gap
+			//"base_spread"				"-0.5"   			//(already disabled)				//Made for the EPG circular crosshair to allign the circle better
+			//"base_spread"				"0.0"				//(already disabled)	 	//0.0 is default spread			
+
+			//(have only one "base_spread" active at a time), remove "//" to make base_spread active, apply "//" infront to disable it
+
+			Args
+			{
+				isFiring				weapon_is_firing
+			}
+		}
+
+		Crosshair_2 //Addon Middle Crosshair
+		{
+			//Wingman elite dot crosshair (not visible in ads)
+			"ui"						"ui/crosshair_wingman_n"		//(can disable)
+			"base_spread"				"0"								//(can disable)
+
+			//EPG circular crosshair
+			//"ui"						"ui/crosshair_circle2"			//(already disabled)
+			//"base_spread"				"0"								//(already disabled)
+
+			//(have only one crosshair active at a time), remove "//" to make crosshair active, apply "//" infront to disable it
+
+			Args
+			{
+				isFiring				weapon_is_firing
+			}
+		}
+	}
+}

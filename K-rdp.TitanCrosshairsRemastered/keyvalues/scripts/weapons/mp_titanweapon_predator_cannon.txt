@@ -1,0 +1,86 @@
+WeaponData
+{
+	active_crosshair_count				"1"
+	rui_crosshair_index					"0"
+
+	RUI_CrosshairData
+	{
+		DefaultArgs
+		{
+			adjustedSpread				weapon_spread
+			adsFrac 					""//player_zoomFrac
+			isSprinting					player_is_sprinting
+			isReloading					weapon_is_reloading
+			teamColor					crosshair_team_color
+			isAmped						weapon_is_amped
+		    crosshairMovementX          crosshair_movement_x
+		    crosshairMovementY          crosshair_movement_y
+		    isActive					weapon_is_active
+		}
+
+		Crosshair_1 //Close Range Mode
+		{
+			"ui"						"ui/crosshair_titan_predator_close_range"
+			"base_spread"				"-1" 		//Slighty reduced to match visual spread	//(can disable)
+			//"base_spread"				"0.0"			//0.0 is default spread 				//(already disabled)
+
+			//(have only one "base_spread" active at a time), remove "//" to make base_spread active, apply "//" infront to disable it
+
+			Args
+			{
+				isFiring				weapon_is_firing
+				//adsFrac 				player_zoomFrac
+			}
+		}
+
+		Crosshair_2 //Long Range Powershot (unchanged)
+		{
+			"ui"						"ui/crosshair_titan_predator_power_shot_long"
+			"base_spread"				"0.0"
+			Args
+			{
+				isFiring				weapon_is_firing
+				adsFrac 				player_zoomFrac
+			}
+		}
+
+		Crosshair_3 //Close Range Powershot
+		{
+			//Scorch T-203 thermite launcher, circularish crosshair
+			"ui"						"ui/crosshair_scorch"							//(can disable)
+			"base_spread"				"3"												//(can disable)
+
+			//Default crosshair
+			//"ui"						"ui/crosshair_titan_predator_power_shot_close"	//(already disabled)
+			//"base_spread"				"-4.0"											//(already disabled)
+
+			//(have only one crosshair active at a time), remove "//" to make crosshair active, apply "//" infront to disable it
+
+			Args
+			{
+				isFiring				weapon_is_firing
+			}
+		}
+		Crosshair_4 //Long Range Mode
+		{
+			//B3 Wingman circular crosshair with a dot
+			"ui"						"ui/crosshair_wingman"						//(can disable)
+			"base_spread"				"-0.5"										//(can disable)
+
+			//Alternator diamond crosshair with a dot
+			//"ui"						"ui/crosshair_alternator"					//(already disabled)
+			//"base_spread"				"-1.33"										//(already disabled)
+
+			//Default crosshair
+			//"ui"						"ui/crosshair_titan_predator_long_range"	//(already disabled)
+			//"base_spread"				"-1.5"										//(already disabled)
+			
+			//(have only one crosshair active at a time), remove "//" to make crosshair active, apply "//" infront to disable it
+
+			Args
+			{
+				isFiring				weapon_is_firing
+			}
+		}
+	}
+}
