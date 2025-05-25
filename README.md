@@ -56,4 +56,4 @@ Splitter Rifle Crosshair 2: (take off the "//" infront like here to enable the l
 If you wish to disable any crosshair, just remove the file, by legion, you should disable the crosshair and enable the default crosshair in the file, 
 unless you want to disable all legion crosshairs
 
-With any questions regarding the mod, dm me on discord https://discord.com/users/375616010402922498
+With any questions regarding the mod, dm me on discord knightfire_rdp
